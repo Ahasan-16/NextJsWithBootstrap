@@ -69,9 +69,9 @@ const Page = () => {
             <input type={'file'} className={'form-control'} disabled={true}/><br/>
 
             <select className={'form-select'}>
-                <option value={"1"}>one</option>
-                <option value={'2'} selected={true}>two</option>
-                <option value={'3'}>three</option>
+                <option value={1}>one</option>
+                <option value={2} selected={true}>two</option>
+                <option value={3}>three</option>
             </select><br/>
 
             <div className="form-check">
@@ -228,6 +228,47 @@ const Page = () => {
                 <div className={'tab-pane'} id ='contact'> This is contact tab</div>
             </div><br/>
 
+            {/*arek ta navbar tin somantoral line diye*/}
+            <nav className={'navbar  navbar-expand-lg shadow-lg'} >
+                <div className={'container-fluid'}>
+                    <button className={'navbar-toggler'} data-bs-toggle={'collapse'} data-bs-target={'#collapse'}>
+                        <span className={'navbar-toggler-icon'}></span>
+                    </button>
+                    <a className={'navbar-brand'} href={'#'}>Navbar</a>
+
+                    <div className={'collapse navbar-collapse'} id='collapse'>
+                        <ul className={'navbar-nav'}>
+                            <li className={'nav-item'}><a className={'nav-link'} href={'#'}>Home</a></li>
+                            <li className={'nav-item'}><a className={'nav-link'} href={'#'}>Link</a></li>
+                        </ul>
+                    </div>
+
+                    <form className={'d-flex'} role={'search'}>
+                        <input className={'form-control me-1'} placeholder={'Search'}/>
+                        <button className={'btn btn-outline-success'} type={'submit'}> Search</button>
+
+                    </form>
+
+                </div>
+            </nav><br/>
+
+            <span className={'border text-primary'}>first</span>
+            <span className={'border-top text-primary-emphasis'}>second</span>
+            <span className={'border-start text-body-secondary text-bg-info'}>third</span>
+            <span className={'border-end text-danger text-opacity-25 bg-body-tertiary'}>fourth</span>
+
+<br/><br/>
+            <span className={'align-baseline'}>baseline</span>
+            <span className={'align-top'}>top</span>
+            <span className={'align-middle'}>middle</span>
+            <span className={'align-bottom'}>bottom</span>
+            <span className={'align-text-top'}>text-top</span>
+            <span className={'align-text-bottom'}>text-bottom</span>
+
+
+           <img src={"https://placehold.co/600x400/000000/FFFFFF.png"} alt="Image" className="rounded"/>
+            <img src={"https://placehold.co/600x400/000000/FFFFFF.png"} alt="Image" className="rounded-5"/>
+            <img src={"https://placehold.co/600x400/000000/FFFFFF.png"} alt="Image" className="rounded-pill"/>
 
         </div>
 
