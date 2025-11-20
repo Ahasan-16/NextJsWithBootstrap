@@ -68,19 +68,19 @@ const Page = () => {
             <label className={'form-label'}>Default file input example</label>
             <input type={'file'} className={'form-control'} disabled={true}/><br/>
 
-            <select className={'form-select'}>
+            <select className={'form-select'} defaultValue={'2'} >
                 <option value={1}>one</option>
-                <option value={2} selected={true}>two</option>
+                <option value={2} >two</option>
                 <option value={3}>three</option>
             </select><br/>
 
             <div className="form-check">
-                <input className={'form-check-input'} type={'checkbox'}/>
-                <label className={'form-check-label'}>apple</label>
+                <input className={'form-check-input'} type={'checkbox'} id={'fruits'}/>
+                <label className={'form-check-label'} htmlFor={'fruits'}>apple</label>
             </div>
             <div className="form-check">
-                <input className={'form-check-input'} type={'checkbox'}/>
-                <label className={'form-check-label'}>banana</label>
+                <input className={'form-check-input'} type={'checkbox'} id={'fruits1'}/>
+                <label className={'form-check-label'} htmlFor={'fruits1'}>banana</label>
             </div><br/>
 
             <div className="form-check">
@@ -127,7 +127,6 @@ const Page = () => {
                     <p className={'card-text'}>Some quick example text to build on the card title</p>
                     <a href={"#"} className={"btn btn-primary"}>Go somewhere</a>
                 </div>
-
             </div><br/>
 
             {/*dropdown*/}
@@ -188,7 +187,6 @@ const Page = () => {
                 <div className={'offcanvas-header'}>
                     <h5 className={'offcanvas-title'}>offcanvas</h5>
                     <button className={'btn-close'} data-bs-dismiss={'offcanvas'}></button>
-
                 </div>
                 <div className={'offcanvas-body'}>
 
@@ -263,7 +261,7 @@ const Page = () => {
             <span className={'align-middle'}>middle</span>
             <span className={'align-bottom'}>bottom</span>
             <span className={'align-text-top'}>text-top</span>
-            <span className={'align-text-bottom'}>text-bottom</span>
+            <span className={'align-text-bottom'}>text-bottom</span><br/><br/>
 
 
            <img src={"https://placehold.co/600x400/000000/FFFFFF.png"} alt="Image" className="rounded"/>
